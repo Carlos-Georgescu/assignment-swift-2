@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bakeryPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n0-0E-O7h">
+                                <rect key="frame" x="16" y="44" width="382" height="730"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="amo-WY-Ygd">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="730"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upf-aj-E0y">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="243.33333333333334"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yse-K1-Uk0" userLabel="1">
+                                                        <rect key="frame" x="2" y="0.0" width="378" height="243.33333333333334"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="yse-K1-Uk0" secondAttribute="height" multiplier="191:123" id="GG2-bv-j9U"/>
+                                                        </constraints>
+                                                        <state key="normal" title="0" image="cake"/>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCs-r4-ePt"/>
+                                                            <segue destination="9t0-aN-ghk" kind="presentation" id="qG8-J5-yg2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="yse-K1-Uk0" firstAttribute="centerX" secondItem="Upf-aj-E0y" secondAttribute="centerX" id="8IJ-La-IxZ"/>
+                                                    <constraint firstItem="yse-K1-Uk0" firstAttribute="top" secondItem="Upf-aj-E0y" secondAttribute="top" id="hvZ-LC-t3e"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yse-K1-Uk0" secondAttribute="bottom" id="l8z-DD-Egr"/>
+                                                    <constraint firstItem="yse-K1-Uk0" firstAttribute="centerY" secondItem="Upf-aj-E0y" secondAttribute="centerY" id="snJ-DU-Do9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvk-K3-meR">
+                                                <rect key="frame" x="0.0" y="243.33333333333331" width="382" height="243.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lg-nV-aeO" userLabel="2">
+                                                        <rect key="frame" x="2" y="0.0" width="378" height="243.66666666666666"/>
+                                                        <state key="normal" title="1" image="cookies"/>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5f-qM-imY"/>
+                                                            <segue destination="9t0-aN-ghk" kind="presentation" id="dlO-oC-MZb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="8Lg-nV-aeO" firstAttribute="width" secondItem="gvk-K3-meR" secondAttribute="height" multiplier="191:123" id="6CQ-uM-vEK"/>
+                                                    <constraint firstItem="8Lg-nV-aeO" firstAttribute="top" secondItem="gvk-K3-meR" secondAttribute="top" id="YHQ-51-Lee"/>
+                                                    <constraint firstItem="8Lg-nV-aeO" firstAttribute="centerY" secondItem="gvk-K3-meR" secondAttribute="centerY" id="jA5-ze-BIX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8Lg-nV-aeO" secondAttribute="bottom" constant="-0.33333333333331439" id="jwP-iL-SQe"/>
+                                                    <constraint firstItem="8Lg-nV-aeO" firstAttribute="centerX" secondItem="gvk-K3-meR" secondAttribute="centerX" id="xrP-84-rDt"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-WS-znO">
+                                                <rect key="frame" x="0.0" y="486.66666666666657" width="382" height="243.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXo-GL-Nua" userLabel="3">
+                                                        <rect key="frame" x="2" y="0.0" width="378" height="243.33333333333334"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="SXo-GL-Nua" secondAttribute="height" multiplier="191:123" id="bbu-Nl-a66"/>
+                                                        </constraints>
+                                                        <state key="normal" title="2" image="chocolate"/>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyo-ir-Xlu"/>
+                                                            <segue destination="9t0-aN-ghk" kind="presentation" id="dbW-nU-zPE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="SXo-GL-Nua" secondAttribute="bottom" id="LvM-Zm-ODC"/>
+                                                    <constraint firstItem="SXo-GL-Nua" firstAttribute="top" secondItem="NE0-WS-znO" secondAttribute="top" id="Y8Z-n2-Cay"/>
+                                                    <constraint firstItem="SXo-GL-Nua" firstAttribute="centerX" secondItem="NE0-WS-znO" secondAttribute="centerX" id="tEN-sU-BFI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="amo-WY-Ygd" firstAttribute="leading" secondItem="0n0-0E-O7h" secondAttribute="leading" id="Fgf-LY-Wwv"/>
+                                    <constraint firstAttribute="bottom" secondItem="amo-WY-Ygd" secondAttribute="bottom" id="ZnQ-8a-CBW"/>
+                                    <constraint firstItem="amo-WY-Ygd" firstAttribute="top" secondItem="0n0-0E-O7h" secondAttribute="top" id="dXw-mQ-8oh"/>
+                                    <constraint firstAttribute="trailing" secondItem="amo-WY-Ygd" secondAttribute="trailing" id="wvv-bW-4vl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0n0-0E-O7h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="27Q-FT-4wO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0n0-0E-O7h" secondAttribute="trailing" constant="16" id="MVI-di-3pJ"/>
+                            <constraint firstItem="0n0-0E-O7h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Phi-pX-IUi"/>
+                            <constraint firstItem="0n0-0E-O7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UpI-ny-aa2"/>
+                            <constraint firstItem="0n0-0E-O7h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWh-lt-DQR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0n0-0E-O7h" secondAttribute="bottom" constant="34" id="kDF-Ls-moF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.40000000000001" y="135.96059113300493"/>
+        </scene>
+        <!--Full Size Page-->
+        <scene sceneID="kPo-8z-tEu">
+            <objects>
+                <viewController id="9t0-aN-ghk" customClass="fullSizePage" customModule="bakeryPortfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8UM-65-ZkG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e46-Zl-bBS">
+                                <rect key="frame" x="16" y="271" width="343" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="ESG-vp-IbR"/>
+                                    <constraint firstAttribute="height" constant="216" id="afG-eV-C4E"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-A2-x0x">
+                                <rect key="frame" x="23" y="504" width="336" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlV-Q6-gIN">
+                                <rect key="frame" x="170" y="674" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="sq5-J6-qa6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e46-Zl-bBS" firstAttribute="centerX" secondItem="8UM-65-ZkG" secondAttribute="centerX" id="B9W-A0-Jwx"/>
+                            <constraint firstItem="2Cj-3i-K1x" firstAttribute="bottom" secondItem="AlV-Q6-gIN" secondAttribute="bottom" constant="20" id="MIa-f1-cax"/>
+                            <constraint firstItem="e46-Zl-bBS" firstAttribute="centerY" secondItem="8UM-65-ZkG" secondAttribute="centerY" id="OBg-ih-5PM"/>
+                            <constraint firstItem="aJr-A2-x0x" firstAttribute="top" secondItem="e46-Zl-bBS" secondAttribute="bottom" constant="17" id="lKH-eI-qno"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Cj-3i-K1x"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullSizeImage" destination="e46-Zl-bBS" id="COz-vT-LBC"/>
+                        <outlet property="photoDescription" destination="aJr-A2-x0x" id="rgU-pO-ZiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu5-KE-7MJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="394.58128078817737"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cake" width="1000" height="400"/>
+        <image name="chocolate" width="1600" height="1067"/>
+        <image name="cookies" width="1000" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qG8-J5-yg2"/>
+    </inferredMetricsTieBreakers>
+</document>
